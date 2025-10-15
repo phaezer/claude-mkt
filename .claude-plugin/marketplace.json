@@ -15,6 +15,12 @@
       "path": "plugins/ansible-engineer",
       "version": "1.0.0",
       "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation"
+    },
+    {
+      "name": "kubernetes-platform-engineer",
+      "path": "plugins/kubernetes-platform-engineer",
+      "version": "1.0.0",
+      "description": "Kubernetes platform engineering plugin for cluster management, configuration, monitoring, security, and CI/CD"
     }
   ]
 }

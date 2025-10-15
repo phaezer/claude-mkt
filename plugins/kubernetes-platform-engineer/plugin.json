@@ -1,0 +1,125 @@
+{
+  "name": "kubernetes-platform-engineer",
+  "version": "1.0.0",
+  "description": "Kubernetes platform engineering plugin for cluster management, configuration development, monitoring, security, and CI/CD with support for standard K8s, K3s, Talos, Flatcar, and GitOps",
+  "author": "",
+  "agents": [
+    {
+      "name": "k8s-orchestrator",
+      "description": "Main orchestrator for coordinating Kubernetes platform engineering tasks across specialized agents",
+      "file": "agents/k8s-orchestrator.md"
+    },
+    {
+      "name": "k8s-config-developer",
+      "description": "Develops Kubernetes manifests for standard K8s and K3s distributions",
+      "file": "agents/k8s-config-developer.md"
+    },
+    {
+      "name": "helm-chart-developer",
+      "description": "Develops and maintains Helm charts for Kubernetes applications",
+      "file": "agents/helm-chart-developer.md"
+    },
+    {
+      "name": "k8s-cluster-manager",
+      "description": "Manages Kubernetes clusters using kubectl and other tools for deployments, rollbacks, and operations",
+      "file": "agents/k8s-cluster-manager.md"
+    },
+    {
+      "name": "k8s-monitoring-analyst",
+      "description": "Analyzes monitoring data and provides optimization recommendations",
+      "file": "agents/k8s-monitoring-analyst.md"
+    },
+    {
+      "name": "k8s-security-reviewer",
+      "description": "Reviews Kubernetes configurations and architectures for security vulnerabilities",
+      "file": "agents/k8s-security-reviewer.md"
+    },
+    {
+      "name": "k8s-network-engineer",
+      "description": "Engineers cluster networking with CNIs including Cilium and Calico",
+      "file": "agents/k8s-network-engineer.md"
+    },
+    {
+      "name": "talos-linux-expert",
+      "description": "Specialist for Talos Linux-based Kubernetes clusters",
+      "file": "agents/talos-linux-expert.md"
+    },
+    {
+      "name": "flatcar-linux-expert",
+      "description": "Specialist for Flatcar Container Linux-based Kubernetes clusters",
+      "file": "agents/flatcar-linux-expert.md"
+    },
+    {
+      "name": "cicd-engineer",
+      "description": "CI/CD specialist for GitOps with ArgoCD, Flux, and container workflows",
+      "file": "agents/cicd-engineer.md"
+    },
+    {
+      "name": "cdk8s-engineer",
+      "description": "Develops Kubernetes configurations using CDK8s (Cloud Development Kit for Kubernetes)",
+      "file": "agents/cdk8s-engineer.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "k8s-develop-config",
+      "description": "Develop Kubernetes manifests and configurations",
+      "file": "commands/k8s-develop-config.md"
+    },
+    {
+      "name": "k8s-create-helm-chart",
+      "description": "Create Helm chart for application",
+      "file": "commands/k8s-create-helm-chart.md"
+    },
+    {
+      "name": "k8s-deploy",
+      "description": "Deploy to Kubernetes cluster",
+      "file": "commands/k8s-deploy.md"
+    },
+    {
+      "name": "k8s-rollback",
+      "description": "Rollback Kubernetes deployment",
+      "file": "commands/k8s-rollback.md"
+    },
+    {
+      "name": "k8s-analyze-monitoring",
+      "description": "Analyze monitoring data and provide recommendations",
+      "file": "commands/k8s-analyze-monitoring.md"
+    },
+    {
+      "name": "k8s-security-review",
+      "description": "Security review of Kubernetes configurations",
+      "file": "commands/k8s-security-review.md"
+    },
+    {
+      "name": "k8s-setup-networking",
+      "description": "Configure Kubernetes networking with CNI",
+      "file": "commands/k8s-setup-networking.md"
+    },
+    {
+      "name": "k8s-setup-talos",
+      "description": "Configure Talos Linux-based cluster",
+      "file": "commands/k8s-setup-talos.md"
+    },
+    {
+      "name": "k8s-setup-flatcar",
+      "description": "Configure Flatcar Linux-based cluster",
+      "file": "commands/k8s-setup-flatcar.md"
+    },
+    {
+      "name": "k8s-setup-gitops",
+      "description": "Setup GitOps CI/CD with ArgoCD or Flux",
+      "file": "commands/k8s-setup-gitops.md"
+    },
+    {
+      "name": "k8s-cdk8s-develop",
+      "description": "Develop Kubernetes configs using CDK8s",
+      "file": "commands/k8s-cdk8s-develop.md"
+    },
+    {
+      "name": "k8s-full-stack-deploy",
+      "description": "Orchestrated end-to-end deployment workflow",
+      "file": "commands/k8s-full-stack-deploy.md"
+    }
+  ]
+}
