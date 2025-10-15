@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "description": "A marketplace for Claude Code plugins",
   "type": "marketplace",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "network-engineer",
+      "path": "plugins/network-engineer",
+      "version": "1.0.0",
+      "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure"
+    }
+  ]
 }

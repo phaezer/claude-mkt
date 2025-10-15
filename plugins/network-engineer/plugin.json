@@ -1,0 +1,85 @@
+{
+  "name": "network-engineer",
+  "version": "1.0.0",
+  "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure with support for various networking stacks, FRR routing, and SONiC NOS",
+  "author": "",
+  "agents": [
+    {
+      "name": "network-orchestrator",
+      "description": "Main orchestrator for coordinating network engineering tasks across specialized agents",
+      "file": "agents/network-orchestrator.md"
+    },
+    {
+      "name": "interfaces-config-generator",
+      "description": "Generates /etc/network/interfaces configuration files for Debian/Ubuntu systems",
+      "file": "agents/interfaces-config-generator.md"
+    },
+    {
+      "name": "netplan-config-generator",
+      "description": "Generates netplan YAML configuration files for modern Ubuntu/Debian systems",
+      "file": "agents/netplan-config-generator.md"
+    },
+    {
+      "name": "network-architecture-reviewer",
+      "description": "Reviews network architecture plans and configuration files for errors and best practices",
+      "file": "agents/network-architecture-reviewer.md"
+    },
+    {
+      "name": "network-security-reviewer",
+      "description": "Reviews network architecture and configurations for security issues based on NIST standards",
+      "file": "agents/network-security-reviewer.md"
+    },
+    {
+      "name": "frr-config-generator",
+      "description": "Generates FRR (Free Range Routing) configuration files for BGP, OSPF, IS-IS, and other routing protocols",
+      "file": "agents/frr-config-generator.md"
+    },
+    {
+      "name": "sonic-engineer",
+      "description": "Works with SONiC Network Operating System for configuration generation and operational commands",
+      "file": "agents/sonic-engineer.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "design-network",
+      "description": "Design a network architecture with orchestrated planning",
+      "file": "commands/design-network.md"
+    },
+    {
+      "name": "review-network-config",
+      "description": "Review network configuration files for errors and best practices",
+      "file": "commands/review-network-config.md"
+    },
+    {
+      "name": "review-network-security",
+      "description": "Security review of network architecture based on NIST standards",
+      "file": "commands/review-network-security.md"
+    },
+    {
+      "name": "generate-frr-config",
+      "description": "Generate FRR routing configuration files",
+      "file": "commands/generate-frr-config.md"
+    },
+    {
+      "name": "generate-interfaces-config",
+      "description": "Generate /etc/network/interfaces configuration",
+      "file": "commands/generate-interfaces-config.md"
+    },
+    {
+      "name": "generate-netplan-config",
+      "description": "Generate netplan YAML configuration",
+      "file": "commands/generate-netplan-config.md"
+    },
+    {
+      "name": "sonic-config",
+      "description": "Work with SONiC NOS configuration and operations",
+      "file": "commands/sonic-config.md"
+    },
+    {
+      "name": "deploy-network",
+      "description": "Deploy network configuration with orchestration",
+      "file": "commands/deploy-network.md"
+    }
+  ]
+}
