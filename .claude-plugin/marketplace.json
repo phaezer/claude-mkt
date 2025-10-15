@@ -1,0 +1,7 @@
+{
+  "name": "claude-mkt",
+  "version": "1.0.0",
+  "description": "A marketplace for Claude Code plugins",
+  "type": "marketplace",
+  "plugins": []
+}
