@@ -9,6 +9,12 @@
       "path": "plugins/network-engineer",
       "version": "1.0.0",
       "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure"
+    },
+    {
+      "name": "ansible-engineer",
+      "path": "plugins/ansible-engineer",
+      "version": "1.0.0",
+      "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation"
     }
   ]
 }

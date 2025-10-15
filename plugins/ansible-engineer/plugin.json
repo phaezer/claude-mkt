@@ -1,0 +1,65 @@
+{
+  "name": "ansible-engineer",
+  "version": "1.0.0",
+  "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestration",
+  "author": "",
+  "agents": [
+    {
+      "name": "ansible-orchestrator",
+      "description": "Main orchestrator for coordinating Ansible development tasks across specialized agents",
+      "file": "agents/ansible-orchestrator.md"
+    },
+    {
+      "name": "ansible-developer",
+      "description": "Develops Ansible roles, playbooks, tasks, handlers, and modules",
+      "file": "agents/ansible-developer.md"
+    },
+    {
+      "name": "ansible-code-reviewer",
+      "description": "Reviews Ansible code for errors, organization, best practices, and potential issues",
+      "file": "agents/ansible-code-reviewer.md"
+    },
+    {
+      "name": "ansible-security-reviewer",
+      "description": "Reviews Ansible code for security vulnerabilities and compliance issues",
+      "file": "agents/ansible-security-reviewer.md"
+    },
+    {
+      "name": "jinja2-template-engineer",
+      "description": "Develops Jinja2 templates with domain-specific expertise through specialist agent coordination",
+      "file": "agents/jinja2-template-engineer.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "develop-ansible",
+      "description": "Develop Ansible roles and playbooks",
+      "file": "commands/develop-ansible.md"
+    },
+    {
+      "name": "review-ansible-code",
+      "description": "Review Ansible code for errors and best practices",
+      "file": "commands/review-ansible-code.md"
+    },
+    {
+      "name": "review-ansible-security",
+      "description": "Security review of Ansible code",
+      "file": "commands/review-ansible-security.md"
+    },
+    {
+      "name": "create-jinja2-template",
+      "description": "Create Jinja2 templates with domain expertise",
+      "file": "commands/create-jinja2-template.md"
+    },
+    {
+      "name": "ansible-full-review",
+      "description": "Complete Ansible review (code + security)",
+      "file": "commands/ansible-full-review.md"
+    },
+    {
+      "name": "ansible-project-init",
+      "description": "Initialize new Ansible project structure",
+      "file": "commands/ansible-project-init.md"
+    }
+  ]
+}
