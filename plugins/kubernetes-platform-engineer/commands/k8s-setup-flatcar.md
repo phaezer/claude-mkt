@@ -1,3 +1,8 @@
+---
+description: Configure Flatcar Linux-based cluster
+argument-hint: Optional cluster requirements
+---
+
 You are initiating Flatcar Container Linux cluster setup. Use the flatcar-linux-expert agent.
 
 If the user specifies requirements, pass to the agent. Otherwise, ask for:

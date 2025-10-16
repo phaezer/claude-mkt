@@ -62,39 +62,14 @@
   ],
   "commands": [
     {
-      "name": "k8s-develop-config",
-      "description": "Develop Kubernetes manifests and configurations",
-      "file": "commands/k8s-develop-config.md"
-    },
-    {
-      "name": "k8s-create-helm-chart",
-      "description": "Create Helm chart for application",
-      "file": "commands/k8s-create-helm-chart.md"
-    },
-    {
       "name": "k8s-deploy",
       "description": "Deploy to Kubernetes cluster",
       "file": "commands/k8s-deploy.md"
     },
     {
-      "name": "k8s-rollback",
-      "description": "Rollback Kubernetes deployment",
-      "file": "commands/k8s-rollback.md"
-    },
-    {
-      "name": "k8s-analyze-monitoring",
-      "description": "Analyze monitoring data and provide recommendations",
-      "file": "commands/k8s-analyze-monitoring.md"
-    },
-    {
       "name": "k8s-security-review",
       "description": "Security review of Kubernetes configurations",
       "file": "commands/k8s-security-review.md"
-    },
-    {
-      "name": "k8s-setup-networking",
-      "description": "Configure Kubernetes networking with CNI",
-      "file": "commands/k8s-setup-networking.md"
     },
     {
       "name": "k8s-setup-talos",
@@ -110,11 +85,6 @@
       "name": "k8s-setup-gitops",
       "description": "Setup GitOps CI/CD with ArgoCD or Flux",
       "file": "commands/k8s-setup-gitops.md"
-    },
-    {
-      "name": "k8s-cdk8s-develop",
-      "description": "Develop Kubernetes configs using CDK8s",
-      "file": "commands/k8s-cdk8s-develop.md"
     },
     {
       "name": "k8s-full-stack-deploy",
