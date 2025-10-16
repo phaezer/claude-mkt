@@ -1,8 +1,10 @@
 {
-  "name": "mcp-engineer",
+  "name": "mcp",
   "version": "1.0.0",
   "description": "MCP (Model Context Protocol) engineering plugin for architecting, developing, testing, and deploying MCP servers and clients in Python and TypeScript",
-  "author": "Eric Austin <e@plsr.io>",
+  "author": {
+    "name": "Eric Austin <e@plsr.io>"
+  },
   "agents": [
     {
       "name": "mcp-orchestrator",

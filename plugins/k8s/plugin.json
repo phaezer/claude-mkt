@@ -2,7 +2,9 @@
   "name": "k8s",
   "version": "1.0.0",
   "description": "Kubernetes platform engineering plugin for cluster management, configuration development, monitoring, security, and CI/CD with support for standard K8s, K3s, Talos, Flatcar, and GitOps",
-  "author": "Eric Austin <e@plsr.io>",
+  "author": {
+    "name": "Eric Austin <e@plsr.io>"
+  },
   "agents": [
     {
       "name": "k8s-orchestrator",
