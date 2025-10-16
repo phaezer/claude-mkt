@@ -2,7 +2,9 @@
   "name": "ansible",
   "version": "1.0.0",
   "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestration",
-  "author": "Eric Austin <e@plsr.io>",
+  "author": {
+    "name": "Eric Austin <e@plsr.io>"
+  },
   "agents": [
     {
       "name": "ansible-orchestrator",

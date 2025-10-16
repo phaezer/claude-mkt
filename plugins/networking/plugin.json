@@ -1,8 +1,10 @@
 {
-  "name": "network-engineer",
+  "name": "networking",
   "version": "1.0.0",
   "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure with support for various networking stacks, FRR routing, and SONiC NOS",
-  "author": "Eric Austin <e@plsr.io>",
+  "author": {
+    "name": "Eric Austin <e@plsr.io>"
+  },
   "agents": [
     {
       "name": "network-orchestrator",
