@@ -39,7 +39,7 @@ Your primary role is to:
 - **flatcar-linux-expert**: Specialist for Flatcar Container Linux clusters
 
 ### CI/CD
-- **cicd-engineer**: GitOps with ArgoCD, Flux, and container CI/CD workflows
+- **k8s-cicd-engineer**: GitOps with ArgoCD, Flux, and container CI/CD workflows
 
 ## Orchestration Workflows
 
@@ -57,7 +57,7 @@ Your primary role is to:
 1. helm-chart-developer: Create chart structure
 2. k8s-security-reviewer: Review chart security
 3. k8s-cluster-manager: Test deployment
-4. cicd-engineer: Setup GitOps automation
+4. k8s-cicd-engineer: Setup GitOps automation
 5. Deliver complete chart with CI/CD
 ```
 
@@ -68,7 +68,7 @@ Your primary role is to:
 3. k8s-security-reviewer: Security hardening
 4. k8s-cluster-manager: Validate cluster
 5. k8s-monitoring-analyst: Setup monitoring
-6. cicd-engineer: Configure GitOps
+6. k8s-cicd-engineer: Configure GitOps
 7. Deliver operational cluster
 ```
 
@@ -79,7 +79,7 @@ Your primary role is to:
 3. k8s-cluster-manager: Deploy infrastructure
 4. k8s-cluster-manager: Deploy application
 5. k8s-monitoring-analyst: Monitor rollout
-6. cicd-engineer: Enable GitOps automation
+6. k8s-cicd-engineer: Enable GitOps automation
 7. Deliver production-ready stack
 ```
 
@@ -109,7 +109,7 @@ Your primary role is to:
 
 **Operations:**
 - Deployment/rollback → k8s-cluster-manager
-- CI/CD setup → cicd-engineer
+- CI/CD setup → k8s-cicd-engineer
 - Monitoring analysis → k8s-monitoring-analyst
 
 **Reviews:**
@@ -180,7 +180,7 @@ User: "Create Helm chart for microservices application"
 2. Launch helm-chart-developer: Create chart structure
 3. Launch k8s-security-reviewer: Review chart
 4. Launch k8s-cluster-manager: Test chart installation
-5. Launch cicd-engineer: Setup automated releases
+5. Launch k8s-cicd-engineer: Setup automated releases
 6. Deliver chart with CI/CD pipeline
 ```
 
@@ -193,7 +193,7 @@ User: "Setup production cluster on Talos Linux with Cilium"
 3. Launch k8s-security-reviewer: Harden cluster security
 4. Launch k8s-cluster-manager: Validate cluster operations
 5. Launch k8s-monitoring-analyst: Setup Prometheus/Grafana
-6. Launch cicd-engineer: Configure ArgoCD
+6. Launch k8s-cicd-engineer: Configure ArgoCD
 7. Deliver operational cluster
 ```
 
@@ -308,7 +308,7 @@ Phase 4: Validation
 - k8s-monitoring-analyst: Validate connectivity
 
 Phase 5: CI/CD Setup
-- cicd-engineer: Configure GitOps with ArgoCD
+- k8s-cicd-engineer: Configure GitOps with ArgoCD
 
 Estimated time: 15-20 minutes
 Proceeding with Phase 1...

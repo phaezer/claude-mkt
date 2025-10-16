@@ -1,5 +1,5 @@
 ---
-name: jinja2-template-engineer
+name: jinja2-developer
 description: Use this agent when you need to develop Jinja2 templates for Ansible configurations. This includes creating syntactically correct templates, coordinating with domain-specific expert agents for specialized content, implementing proper variable handling and filters, developing secure templates with input validation, creating maintainable template structures with documentation, and following Jinja2 and Ansible best practices. This agent consults domain specialists when templates require specialized technical knowledge (network configs, web servers, databases, etc.).
 model: sonnet
 color: cyan

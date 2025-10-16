@@ -1,5 +1,5 @@
 ---
-name: cicd-engineer
+name: k8s-cicd-engineer
 description: Use this agent when you need to implement and manage GitOps-based CI/CD workflows for Kubernetes. This includes setting up ArgoCD applications, configuring Flux controllers, designing GitOps workflows, building container CI/CD pipelines, implementing automated deployments, and progressive delivery with Flagger. Invoke this agent for GitOps automation, continuous deployment strategy, and integrating Git as the single source of truth for Kubernetes deployments.
 model: sonnet
 color: violet

@@ -1,0 +1,85 @@
+{
+  "name": "mcp-engineer",
+  "version": "1.0.0",
+  "description": "MCP (Model Context Protocol) engineering plugin for architecting, developing, testing, and deploying MCP servers and clients in Python and TypeScript",
+  "author": "Eric Austin <e@plsr.io>",
+  "agents": [
+    {
+      "name": "mcp-orchestrator",
+      "description": "Main orchestrator for coordinating MCP development tasks across specialized agents",
+      "file": "agents/mcp-orchestrator.md"
+    },
+    {
+      "name": "mcp-server-architect",
+      "description": "Designs MCP server architecture including tools, resources, and prompts",
+      "file": "agents/mcp-server-architect.md"
+    },
+    {
+      "name": "mcp-client-architect",
+      "description": "Designs MCP client architecture for integrating with MCP servers",
+      "file": "agents/mcp-client-architect.md"
+    },
+    {
+      "name": "mcp-python-developer",
+      "description": "Develops MCP servers and clients in Python using FastMCP and official SDK (Python 3.11+)",
+      "file": "agents/mcp-python-developer.md"
+    },
+    {
+      "name": "mcp-typescript-developer",
+      "description": "Develops MCP servers and clients in TypeScript using official @modelcontextprotocol/sdk",
+      "file": "agents/mcp-typescript-developer.md"
+    },
+    {
+      "name": "mcp-testing-engineer",
+      "description": "Tests MCP servers and clients with unit tests and MCP Inspector integration",
+      "file": "agents/mcp-testing-engineer.md"
+    },
+    {
+      "name": "mcp-deployment-engineer",
+      "description": "Handles deployment of MCP servers for local installations and Docker containers",
+      "file": "agents/mcp-deployment-engineer.md"
+    },
+    {
+      "name": "mcp-security-reviewer",
+      "description": "Reviews MCP servers and clients for security vulnerabilities and best practices",
+      "file": "agents/mcp-security-reviewer.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "mcp-init-project",
+      "description": "Initialize new MCP server or client project",
+      "file": "commands/mcp-init-project.md"
+    },
+    {
+      "name": "develop-mcp-server",
+      "description": "Develop MCP server with tools, resources, and prompts",
+      "file": "commands/develop-mcp-server.md"
+    },
+    {
+      "name": "develop-mcp-client",
+      "description": "Develop MCP client for integration with MCP servers",
+      "file": "commands/develop-mcp-client.md"
+    },
+    {
+      "name": "test-mcp",
+      "description": "Test MCP server or client functionality",
+      "file": "commands/test-mcp.md"
+    },
+    {
+      "name": "review-mcp-security",
+      "description": "Security review of MCP server or client",
+      "file": "commands/review-mcp-security.md"
+    },
+    {
+      "name": "deploy-mcp",
+      "description": "Deploy MCP server locally or with Docker",
+      "file": "commands/deploy-mcp.md"
+    },
+    {
+      "name": "mcp-full-stack-dev",
+      "description": "End-to-end orchestrated MCP development workflow",
+      "file": "commands/mcp-full-stack-dev.md"
+    }
+  ]
+}

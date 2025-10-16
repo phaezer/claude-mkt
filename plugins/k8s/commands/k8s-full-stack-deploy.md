@@ -70,7 +70,7 @@ Launch **k8s-monitoring-analyst** to:
 
 ### 6. Phase 5 - GitOps Automation
 
-Launch **cicd-engineer** to establish GitOps:
+Launch **k8s-cicd-engineer** to establish GitOps:
 - Configure ArgoCD Application or Flux Kustomization
 - Set up automatic sync policies
 - Configure deployment notifications
