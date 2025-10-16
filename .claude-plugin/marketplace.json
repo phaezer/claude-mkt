@@ -1,26 +1,56 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-mkt",
   "version": "1.0.0",
-  "description": "A marketplace for Claude Code plugins",
-  "type": "marketplace",
+  "description": "A curated marketplace for professional Claude Code plugins focused on infrastructure, automation, and platform engineering",
+  "owner": {
+    "name": "Eric Austin",
+    "email": "e@plsr.io"
+  },
   "plugins": [
     {
-      "name": "network-engineer",
-      "path": "plugins/network-engineer",
+      "name": "k8s",
+      "description": "Kubernetes platform engineering plugin for cluster management, configuration development, monitoring, security, and CI/CD with support for standard K8s, K3s, Talos, Flatcar, and GitOps",
+      "source": "./plugins/k8s",
+      "category": "infrastructure",
       "version": "1.0.0",
-      "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure"
+      "author": {
+        "name": "Eric Austin",
+        "email": "e@plsr.io"
+      }
     },
     {
-      "name": "ansible-engineer",
-      "path": "plugins/ansible-engineer",
+      "name": "ansible",
+      "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestration",
+      "source": "./plugins/ansible",
+      "category": "infrastructure",
       "version": "1.0.0",
-      "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation"
+      "author": {
+        "name": "Eric Austin",
+        "email": "e@plsr.io"
+      }
     },
     {
-      "name": "kubernetes-platform-engineer",
-      "path": "plugins/kubernetes-platform-engineer",
+      "name": "networking",
+      "description": "Network engineering plugin for architecting and implementing Linux networking infrastructure with support for various networking stacks, FRR routing, and SONiC NOS",
+      "source": "./plugins/networking",
+      "category": "infrastructure",
       "version": "1.0.0",
-      "description": "Kubernetes platform engineering plugin for cluster management, configuration, monitoring, security, and CI/CD"
+      "author": {
+        "name": "Eric Austin",
+        "email": "e@plsr.io"
+      }
+    },
+    {
+      "name": "mcp",
+      "description": "MCP (Model Context Protocol) engineering plugin for architecting, developing, testing, and deploying MCP servers and clients in Python and TypeScript",
+      "source": "./plugins/mcp",
+      "category": "development",
+      "version": "1.0.0",
+      "author": {
+        "name": "Eric Austin",
+        "email": "e@plsr.io"
+      }
     }
   ]
 }
