@@ -5,7 +5,7 @@ argument-hint: Optional template requirements
 
 # Jinja2 Template Creation
 
-You are creating Jinja2 templates for Ansible using the jinja2-template-engineer agent, which coordinates with domain specialists for accurate technical content.
+You are creating Jinja2 templates for Ansible using the jinja2-developer agent, which coordinates with domain specialists for accurate technical content.
 
 ## Workflow
 
@@ -87,7 +87,7 @@ Requirements:
 
 ### 5. Create Template
 
-Launch **jinja2-template-engineer** with specialist guidance:
+Launch **jinja2-developer** with specialist guidance:
 ```
 "Create Jinja2 template for [file/purpose].
 Technology: [web server/database/network/etc.]

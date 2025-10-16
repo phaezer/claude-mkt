@@ -271,6 +271,7 @@ npm outdated
 ```
 
 **Create Dependency Report:**
+
 | Package | Current | Vulnerability | Severity | Fixed In | Action |
 |---------|---------|---------------|----------|----------|--------|
 | requests | 2.25.0 | CVE-2023-xxxxx | High | 2.31.0 | Update |

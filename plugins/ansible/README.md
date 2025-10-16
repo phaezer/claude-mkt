@@ -1,10 +1,10 @@
-# Ansible Engineer Plugin
+# Ansible Plugin
 
 A comprehensive Claude Code plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestrated workflows.
 
 ## Overview
 
-The Ansible Engineer plugin provides specialized agents and workflows for:
+The Ansible plugin provides specialized agents and workflows for:
 - Ansible role and playbook development
 - Comprehensive code review for quality and best practices
 - Security review for vulnerabilities and compliance
@@ -66,7 +66,7 @@ Reviews Ansible code for security vulnerabilities and compliance with security s
 - Supply chain security
 - Compliance requirements (PCI-DSS, HIPAA, GDPR)
 
-### jinja2-template-engineer
+### jinja2-developer
 Develops Jinja2 templates for Ansible with the ability to coordinate with domain-specific expert agents.
 
 **Capabilities:**
@@ -156,7 +156,7 @@ Built-in security review capabilities for:
 - Compliance validation
 
 ### Domain Expert Integration
-The jinja2-template-engineer can coordinate with specialist agents from other plugins (like network-engineer) to create technically accurate templates for specialized configurations.
+The jinja2-developer can coordinate with specialist agents from other plugins (like network-engineer) to create technically accurate templates for specialized configurations.
 
 ### Best Practices Enforcement
 Reviews check for:
@@ -351,19 +351,19 @@ The ansible-security-reviewer evaluates against:
 ## Integration with Other Plugins
 
 ### Domain Specialist Coordination
-The jinja2-template-engineer can coordinate with specialist agents from other plugins:
+The jinja2-developer can coordinate with specialist agents from other plugins:
 
 **Example: Network Configuration Template**
 - Template needs FRR BGP config
 - User specifies: "Consult frr-config-generator from network-engineer plugin"
-- jinja2-template-engineer launches frr-config-generator
+- jinja2-developer launches frr-config-generator
 - Incorporates specialist's BGP configuration into template
 - Delivers Jinja2 template with expert-level network configuration
 
 **Example: Database Configuration Template**
 - Template needs PostgreSQL configuration
 - User specifies: "Consult database-specialist agent"
-- jinja2-template-engineer coordinates with database expert
+- jinja2-developer coordinates with database expert
 - Creates template with optimized DB configuration
 - Validates and documents template
 

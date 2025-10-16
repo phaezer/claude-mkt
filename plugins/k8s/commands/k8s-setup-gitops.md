@@ -5,7 +5,7 @@ argument-hint: Optional GitOps tool preference
 
 # GitOps CI/CD Setup
 
-You are setting up GitOps-based continuous deployment using the cicd-engineer agent.
+You are setting up GitOps-based continuous deployment using the k8s-cicd-engineer agent.
 
 ## Workflow
 
@@ -50,7 +50,7 @@ Ask for:
 
 ### 3. Install GitOps Tool
 
-Launch **cicd-engineer** to install:
+Launch **k8s-cicd-engineer** to install:
 
 **For ArgoCD**:
 ```bash

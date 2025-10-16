@@ -1,5 +1,5 @@
 {
-  "name": "ansible-engineer",
+  "name": "ansible",
   "version": "1.0.0",
   "description": "Ansible engineering plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestration",
   "author": "Eric Austin <e@plsr.io>",
@@ -25,9 +25,9 @@
       "file": "agents/ansible-security-reviewer.md"
     },
     {
-      "name": "jinja2-template-engineer",
+      "name": "jinja2-developer",
       "description": "Develops Jinja2 templates with domain-specific expertise through specialist agent coordination",
-      "file": "agents/jinja2-template-engineer.md"
+      "file": "agents/jinja2-developer.md"
     }
   ],
   "commands": [

@@ -1,5 +1,5 @@
 {
-  "name": "kubernetes-platform-engineer",
+  "name": "k8s",
   "version": "1.0.0",
   "description": "Kubernetes platform engineering plugin for cluster management, configuration development, monitoring, security, and CI/CD with support for standard K8s, K3s, Talos, Flatcar, and GitOps",
   "author": "Eric Austin <e@plsr.io>",
@@ -50,9 +50,9 @@
       "file": "agents/flatcar-linux-expert.md"
     },
     {
-      "name": "cicd-engineer",
+      "name": "k8s-cicd-engineer",
       "description": "CI/CD specialist for GitOps with ArgoCD, Flux, and container workflows",
-      "file": "agents/cicd-engineer.md"
+      "file": "agents/k8s-cicd-engineer.md"
     },
     {
       "name": "cdk8s-engineer",

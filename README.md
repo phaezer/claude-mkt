@@ -7,11 +7,11 @@ A curated marketplace for professional Claude Code plugins focused on infrastruc
 ### 🚢 Kubernetes Platform Engineer
 **Comprehensive Kubernetes platform engineering and operations**
 
-- **7 Specialized Agents**: Helm charts, deployments, troubleshooting, security, Talos Linux, GitOps, architecture review
-- **12 Slash Commands**: Full-stack deployments, security reviews, cluster setup, troubleshooting workflows
+- **11 Specialized Agents**: Helm charts, cluster management, monitoring, security, Talos/Flatcar Linux, GitOps, CDK8s
+- **6 Slash Commands**: Deployments, security reviews, cluster setup (Talos/Flatcar), GitOps configuration
 - **Focus Areas**: Production-grade Kubernetes operations, security hardening, GitOps workflows, platform automation
 
-[View Plugin →](./plugins/kubernetes-platform-engineer/)
+[View Plugin →](./plugins/k8s/)
 
 ### 🔧 Ansible Engineer
 **Enterprise Ansible automation development and operations**
@@ -20,7 +20,7 @@ A curated marketplace for professional Claude Code plugins focused on infrastruc
 - **6 Slash Commands**: Project initialization, development workflows, comprehensive reviews
 - **Focus Areas**: Infrastructure as Code, configuration management, security compliance, best practices
 
-[View Plugin →](./plugins/ansible-engineer/)
+[View Plugin →](./plugins/ansible/)
 
 ### 🌐 Network Engineer
 **Professional network infrastructure design and configuration**
@@ -29,7 +29,16 @@ A curated marketplace for professional Claude Code plugins focused on infrastruc
 - **8 Slash Commands**: Network design, configuration generation, security reviews, deployment orchestration
 - **Focus Areas**: Data center networking, routing protocols (BGP/OSPF/IS-IS), NIST compliance, infrastructure automation
 
-[View Plugin →](./plugins/network-engineer/)
+[View Plugin →](./plugins/networking/)
+
+### 🔌 MCP Engineer
+**Model Context Protocol server and client development**
+
+- **8 Specialized Agents**: Server/client architecture, Python/TypeScript development, testing, deployment, security
+- **7 Slash Commands**: Project initialization, server/client development, testing, security review, deployment
+- **Focus Areas**: MCP protocol implementation, FastMCP & official SDKs, MCP Inspector testing, Docker deployment
+
+[View Plugin →](./plugins/mcp/)
 
 ## Quick Start
 
@@ -44,7 +53,7 @@ A curated marketplace for professional Claude Code plugins focused on infrastruc
 2. Install a plugin in Claude Code:
    ```bash
    # Navigate to the plugin directory
-   cd plugins/kubernetes-platform-engineer
+   cd plugins/k8s
 
    # Follow Claude Code plugin installation instructions
    ```
@@ -69,25 +78,25 @@ Task tool → kubernetes-orchestrator agent
 ### Kubernetes Platform Engineer
 
 **Agents:**
-- `kubernetes-orchestrator` - Coordinates complex multi-phase Kubernetes operations
+- `k8s-orchestrator` - Coordinates complex multi-phase Kubernetes operations
+- `k8s-config-developer` - Develops Kubernetes manifests for standard K8s and K3s
 - `helm-chart-developer` - Develops production-ready Helm charts
-- `kubernetes-deployer` - Handles application deployments with validation
-- `kubernetes-troubleshooter` - Diagnoses and resolves cluster issues
-- `kubernetes-security-reviewer` - Security audits based on CIS benchmarks
-- `talos-linux-engineer` - Talos Linux cluster management
-- `gitops-engineer` - ArgoCD and Flux GitOps workflows
-- `kubernetes-architecture-reviewer` - Architecture and manifest review
+- `k8s-cluster-manager` - Manages clusters using kubectl for deployments and operations
+- `k8s-monitoring-analyst` - Analyzes monitoring data and provides optimization recommendations
+- `k8s-security-reviewer` - Security audits based on CIS benchmarks
+- `k8s-network-engineer` - Engineers cluster networking with CNIs (Cilium, Calico)
+- `talos-linux-expert` - Talos Linux cluster specialist
+- `flatcar-linux-expert` - Flatcar Container Linux cluster specialist
+- `k8s-cicd-engineer` - GitOps CI/CD with ArgoCD and Flux
+- `cdk8s-engineer` - CDK8s (Cloud Development Kit for Kubernetes) development
 
 **Commands:**
 - `/k8s-deploy` - Deploy applications with full validation
 - `/k8s-full-stack-deploy` - Complete stack deployment orchestration
-- `/k8s-troubleshoot` - Guided troubleshooting workflows
 - `/k8s-security-review` - Comprehensive security audits
 - `/k8s-setup-talos` - Talos Linux cluster setup
-- `/k8s-setup-gitops` - GitOps environment configuration
-- `/develop-helm-chart` - Helm chart development
-- `/review-k8s-manifests` - Manifest review and validation
-- And 4 more specialized commands
+- `/k8s-setup-flatcar` - Flatcar Linux cluster setup
+- `/k8s-setup-gitops` - GitOps environment configuration (ArgoCD/Flux)
 
 ### Ansible Engineer
 
@@ -96,7 +105,7 @@ Task tool → kubernetes-orchestrator agent
 - `ansible-developer` - Develops playbooks, roles, and tasks
 - `ansible-code-reviewer` - Code quality and best practices review
 - `ansible-security-reviewer` - Security compliance and vulnerability review
-- `jinja2-template-engineer` - Jinja2 template development
+- `jinja2-developer` - Jinja2 template development
 
 **Commands:**
 - `/ansible-project-init` - Initialize complete Ansible projects
@@ -126,6 +135,27 @@ Task tool → kubernetes-orchestrator agent
 - `/review-network-config` - Configuration review
 - `/review-network-security` - NIST security review
 - `/deploy-network` - End-to-end deployment orchestration
+
+### MCP Engineer
+
+**Agents:**
+- `mcp-orchestrator` - Coordinates MCP development tasks across specialized agents
+- `mcp-server-architect` - Designs MCP server architecture (tools, resources, prompts)
+- `mcp-client-architect` - Designs MCP client architecture for server integration
+- `mcp-python-developer` - Develops MCP servers/clients in Python (FastMCP & SDK, Python 3.11+)
+- `mcp-typescript-developer` - Develops MCP servers/clients in TypeScript (@modelcontextprotocol/sdk)
+- `mcp-testing-engineer` - Tests MCP servers/clients with unit tests and MCP Inspector
+- `mcp-deployment-engineer` - Handles local and Docker deployment of MCP servers
+- `mcp-security-reviewer` - Security reviews for MCP implementations
+
+**Commands:**
+- `/mcp-init-project` - Initialize new MCP server or client project
+- `/develop-mcp-server` - Develop MCP server with tools, resources, and prompts
+- `/develop-mcp-client` - Develop MCP client for server integration
+- `/test-mcp` - Test MCP server or client functionality
+- `/review-mcp-security` - Security review of MCP implementations
+- `/deploy-mcp` - Deploy MCP server locally or with Docker
+- `/mcp-full-stack-dev` - End-to-end orchestrated MCP development workflow
 
 ## Features
 
@@ -207,22 +237,30 @@ claude-mkt/
 ├── .claude-plugin/
 │   └── marketplace.json          # Marketplace metadata
 ├── plugins/
-│   ├── kubernetes-platform-engineer/
+│   ├── k8s/
 │   │   ├── plugin.json           # Plugin configuration
+│   │   ├── README.md             # Plugin documentation
 │   │   ├── agents/               # Specialized agents
-│   │   │   ├── kubernetes-orchestrator.md
+│   │   │   ├── k8s-orchestrator.md
 │   │   │   ├── helm-chart-developer.md
 │   │   │   └── ...
 │   │   └── commands/             # Slash commands
 │   │       ├── k8s-deploy.md
-│   │       ├── k8s-troubleshoot.md
+│   │       ├── k8s-security-review.md
 │   │       └── ...
-│   ├── ansible-engineer/
+│   ├── ansible/
 │   │   ├── plugin.json
+│   │   ├── README.md
 │   │   ├── agents/
 │   │   └── commands/
-│   └── network-engineer/
+│   ├── networking/
+│   │   ├── plugin.json
+│   │   ├── README.md
+│   │   ├── agents/
+│   │   └── commands/
+│   └── mcp/
 │       ├── plugin.json
+│       ├── README.md
 │       ├── agents/
 │       └── commands/
 └── README.md                     # This file
@@ -235,11 +273,11 @@ For complex multi-step operations, use orchestrator agents that can coordinate m
 
 ```
 /k8s-full-stack-deploy my-app
-  └─ kubernetes-orchestrator
+  └─ k8s-orchestrator
       ├─ helm-chart-developer (generate charts)
-      ├─ kubernetes-architecture-reviewer (review)
-      ├─ kubernetes-security-reviewer (security audit)
-      └─ kubernetes-deployer (deploy with validation)
+      ├─ k8s-config-developer (develop manifests)
+      ├─ k8s-security-reviewer (security audit)
+      └─ k8s-cluster-manager (deploy with validation)
 ```
 
 ### Security Reviews
@@ -255,8 +293,8 @@ Always run security reviews for production deployments:
 Use specialist agents for focused development, then review:
 
 ```
-1. /develop-helm-chart my-app
-2. /review-k8s-manifests charts/my-app
+1. Task tool → helm-chart-developer (develop chart)
+2. Task tool → k8s-security-reviewer (review security)
 3. /k8s-deploy my-app staging
 4. /k8s-security-review staging
 5. /k8s-deploy my-app production
@@ -276,10 +314,11 @@ See individual plugin directories for licensing information.
 ## Version History
 
 ### 1.0.0 (Current)
-- ✅ Kubernetes Platform Engineer plugin
-- ✅ Ansible Engineer plugin
-- ✅ Network Engineer plugin
-- ✅ 22 specialized agents
-- ✅ 26 slash commands
+- ✅ Kubernetes Platform Engineer plugin (11 agents, 6 commands)
+- ✅ Ansible Engineer plugin (5 agents, 6 commands)
+- ✅ Network Engineer plugin (7 agents, 8 commands)
+- ✅ MCP Engineer plugin (8 agents, 7 commands)
+- ✅ 31 specialized agents total
+- ✅ 27 slash commands total
 - ✅ Comprehensive documentation
 - ✅ Production-ready workflows

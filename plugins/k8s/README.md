@@ -113,7 +113,7 @@ Specialist for Flatcar Container Linux-based Kubernetes clusters.
 - Container runtime configuration
 - System maintenance
 
-### cicd-engineer
+### k8s-cicd-engineer
 CI/CD specialist for GitOps with ArgoCD, Flux, and container workflows.
 
 **Implements:**
@@ -214,7 +214,7 @@ Orchestrator coordinates:
 2. k8s-security-reviewer: Security review
 3. k8s-cluster-manager: Deploy to cluster
 4. k8s-monitoring-analyst: Monitor deployment
-5. cicd-engineer: Setup GitOps
+5. k8s-cicd-engineer: Setup GitOps
 
 Result: Production-ready deployment with monitoring and automation
 ```
@@ -382,13 +382,13 @@ All agents can work together through the k8s-orchestrator:
 4. k8s-config-developer → Application manifests
 5. k8s-cluster-manager → Deployment
 6. k8s-monitoring-analyst → Monitoring setup
-7. cicd-engineer → GitOps automation
+7. k8s-cicd-engineer → GitOps automation
 
 **Example: Application Lifecycle**
 1. cdk8s-engineer → Generate configs (TypeScript)
 2. k8s-security-reviewer → Security review
 3. helm-chart-developer → Package as Helm chart
-4. cicd-engineer → Configure ArgoCD
+4. k8s-cicd-engineer → Configure ArgoCD
 5. k8s-cluster-manager → Deploy to cluster
 6. k8s-monitoring-analyst → Monitor and optimize
 

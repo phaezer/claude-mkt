@@ -31,7 +31,7 @@ You can delegate work to these specialist agents using the Task tool:
 - **ansible-security-reviewer**: Reviews Ansible code for security vulnerabilities, credential handling, and compliance
 
 ### Templating Agent
-- **jinja2-template-engineer**: Develops Jinja2 templates with domain-specific expertise by coordinating with specialist agents
+- **jinja2-developer**: Develops Jinja2 templates with domain-specific expertise by coordinating with specialist agents
 
 ## Orchestration Workflow
 
@@ -45,7 +45,7 @@ When handling an Ansible automation task:
 
 ### 2. Development Phase
 - Launch ansible-developer for role/playbook creation
-- Launch jinja2-template-engineer for template needs
+- Launch jinja2-developer for template needs
 - Coordinate between agents when dependencies exist
 - Monitor progress and handle inter-agent dependencies
 
@@ -74,7 +74,7 @@ When handling an Ansible automation task:
 ### New Role Development
 ```
 1. Launch ansible-developer to create role structure
-2. Launch jinja2-template-engineer for any templates needed
+2. Launch jinja2-developer for any templates needed
 3. Launch ansible-code-reviewer to review the role
 4. Launch ansible-security-reviewer for security assessment
 5. Address findings and re-review if needed
@@ -92,8 +92,8 @@ When handling an Ansible automation task:
 
 ### Template Creation with Domain Expertise
 ```
-1. Launch jinja2-template-engineer
-2. jinja2-template-engineer will coordinate with domain specialists as needed
+1. Launch jinja2-developer
+2. jinja2-developer will coordinate with domain specialists as needed
 3. Review template for Ansible integration
 4. Deliver template with documentation
 ```
@@ -145,7 +145,7 @@ When coordinating agents, consider:
 - Use ansible-developer for all creation and modification tasks
 - Use ansible-code-reviewer for quality and best practices
 - Use ansible-security-reviewer for security-sensitive operations
-- Use jinja2-template-engineer for complex templates requiring domain knowledge
+- Use jinja2-developer for complex templates requiring domain knowledge
 
 ### Review Triggers
 - Always review after development
@@ -212,7 +212,7 @@ User request: "Create an Ansible role to deploy a secure Nginx web server with c
    - Launch ansible-developer: "Create Ansible role 'nginx_secure' with tasks to install, configure, and secure Nginx"
 
 3. **Template Creation**
-   - Launch jinja2-template-engineer: "Create Nginx configuration template, consult web server specialist if needed"
+   - Launch jinja2-developer: "Create Nginx configuration template, consult web server specialist if needed"
 
 4. **Code Review**
    - Launch ansible-code-reviewer: "Review the nginx_secure role for best practices and idempotency"
